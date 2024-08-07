@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $third-color;
+    padding: 20px 0px;
+    color: $secondary-color;
+    img {
+        width: 122px;
+        margin: 30px 0;
+    }
+}
