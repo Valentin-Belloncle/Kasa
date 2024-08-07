@@ -1,3 +1,16 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
+
+.banner {
+    @include background-opacity("../../assets/landscape1.png", $third-color, 60%, 25px);
+    @include flex-center;
+    height: 223px;
+
+    .content {
+        position: relative;
+        z-index: 1;
+        color: $primary-color;
+        text-shadow: 0px 4px 4px black;
+    }
+}
