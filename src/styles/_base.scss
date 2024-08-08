@@ -6,13 +6,15 @@ body {
     padding: 0;
     box-sizing: border-box;
     @media (max-width: 375px) {
-        padding: 0 27px;
         font-size: 12px;
     }
     #root{
         display: flex;
         flex-direction: column;
-        gap : 50px
+        gap : 50px;
+        @media (max-width: 375px) {
+            gap: 27px;       
+        }
     }
 }
 

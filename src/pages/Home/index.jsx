@@ -4,10 +4,10 @@ import styles from "./index.module.scss"
 
 function Home() {
     return (
-      <div className={styles.home}>
-        <Banner />
+      <main className={styles.home}>
+        <Banner image="landscape1"/>
         <Card />
-      </div>
+      </main>
      
     )
   }

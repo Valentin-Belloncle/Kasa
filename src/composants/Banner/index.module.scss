@@ -3,9 +3,30 @@
 
 
 .banner {
-    @include background-opacity("../../assets/landscape1.png", $third-color, 60%, 25px);
+    @include background-opacity($third-color, 60%, $border-radius);
     @include flex-center;
+    position: relative;
+    padding: 0 26px;
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    border-radius: $border-radius;
     height: 223px;
+    @media (max-width: 375px) {
+        height: 111px;
+        @include background-opacity($third-color, 60%, $border-radius-small);
+        border-radius: $border-radius-small;
+
+
+    }
+
+    &.landscape1{
+        background-image: url("../../assets/landscape1.png");
+    }
+
+    &.lansdcape2{
+        background-image: url("../../assets/landscape2.png");
+    }
 
     .content {
         position: relative;

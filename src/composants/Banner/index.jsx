@@ -1,12 +1,12 @@
 import styles from "./index.module.scss"
 
-function Banner() {
+function Banner({image}) {
     return (
-      <div className={styles.banner}>
+      <section className={`${styles.banner} ${styles[image]}`}>
         <div className={styles.content}>
           <h1>Chez vous, partout et ailleurs</h1>
         </div>
-      </div>
+      </section>
     )
   }
   
