@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Property from './pages/Property';
 import APropos from './pages/APropos';
-import Error from './composants/Error';
+import Error from './pages/Error';
 import Header from './composants/Header';
 import Footer from './composants/Footer';
 import 'normalize.css';

@@ -1,9 +1,13 @@
+import Banner from "../../composants/Banner"
+import styles from "./index.module.scss"
+
 function APropos() {
-    return (
-      <div>
-        <h1> A Propos 🏠</h1>
-      </div>
-    )
-  }
-  
-  export default APropos
+  return (
+    <main className={styles.propos}>
+      <Banner image="landscape2"/>
+    </main>
+    
+  )
+}
+
+export default APropos
