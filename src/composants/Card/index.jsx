@@ -7,10 +7,10 @@ function Card() {
     <section>
       <ul className={styles.gallery}>
         {logements.map(({ id, cover, title, description }) =>
-          <Link to={`/property/${id}`}>
+          <Link key={id} to={`/property/${id}`}>
             <article className={styles.card} key={id}>
               <img src={cover} alt={description} />
-              <h3 class="card-title">{title}</h3>
+              <h3>{title}</h3>
             </article>
           </Link>
         )}

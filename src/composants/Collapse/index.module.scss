@@ -1,3 +1,63 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
+.collapse {
+    &__topbar {
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
+        height: 32px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        padding: 10px 20px 10px 15px;
+        @media (max-width: 375px) {
+            height: 10px;
+            padding: 10px 6px 10px 10px;
+        }
+        
+        h3 {
+           color: $secondary-color;
+
+            &.xs {
+            font-size: 18px;
+            }
+        }
+
+        button {
+            width: 32px;
+            height: 32px;
+            font-size: 26px;
+            color: $secondary-color;
+            transition: transform 0.3s ease;
+            @media (max-width: 375px) {
+                font-size: 16px;
+            }
+            &.open {
+                transform: rotate(-180deg);
+            }
+        } 
+    }
+
+    &__content {
+        background: rgba(246, 246, 246, 0.45);
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 26px;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        max-height: 0;
+        padding: 0 20px;
+        @media (max-width: 375px) {
+            font-size: 12px;
+            line-height: 17px;
+        }
+
+        &.open {
+            max-height: 200px;
+            padding: 20px 20px;
+            @media (max-width: 375px) {
+                padding: 10px 20px;
+            }
+        }
+    }
+}
