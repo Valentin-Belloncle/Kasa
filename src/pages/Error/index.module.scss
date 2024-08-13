@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.errorCode{
+    @include flex-center;
+    flex-direction: column;
+    gap: 139px;
+    margin: 89px 0;
+    
+    h1{
+        font-size: 288px;
+        color: $primary-color;
+        margin: 0;
+        @media (max-width: 375px) {
+            font-size: 96px;
+        }
+    }
+
+    p{
+        margin: 0;
+        font-size: 36px;
+        font-weight: 500;
+        color: $primary-color;
+    }
+
+    a{
+        text-decoration: underline;
+    }
+}

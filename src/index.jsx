@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Property from './pages/Property';
-import APropos from './pages/APropos';
-import Error from './composants/Error';
+import About from './pages/About';
+import Error from './pages/Error';
 import Header from './composants/Header';
 import Footer from './composants/Footer';
 import 'normalize.css';
@@ -18,7 +18,7 @@ root.render(
       <Routes>
         <Route path="/"  element={<Home />} />
         <Route path="/property/:id"  element={<Property />} />
-        <Route path="/a-propos"  element={<APropos />} />
+        <Route path="/about"  element={<About />} />
         <Route path="*"  element={<Error />} />
       </Routes>
       <Footer />
