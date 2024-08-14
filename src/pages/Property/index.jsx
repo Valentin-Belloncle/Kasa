@@ -1,13 +1,15 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import Slideshow from "../../composants/Slideshow";
+import styles from "./index.module.scss";
 
-function Propriété() {
-  const {id} = useParams()
-
-    return (
-      <div>
-        {id}
-      </div>
-    )
-}
+function Property() {
+	const { id } = useParams();
   
-  export default Propriété
+	return (
+		<div className={styles.about}>
+			<Slideshow id={id} />
+		</div>
+	);
+}
+
+export default Property;

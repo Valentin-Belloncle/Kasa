@@ -1,68 +1,69 @@
 body {
-    max-width: 1440px;
-    font-family: $font;
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    @media (max-width: 375px) {
-        font-size: 12px;
-    }
-    #root{
-        display: flex;
-        flex-direction: column;
-        gap : 50px;
-        @media (max-width: 375px) {
-            gap: 27px;       
-        }
-    }
+	max-width: 1440px;
+	font-family: $font;
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	@media (max-width: 375px) {
+		font-size: 12px;
+	}
+
+	#root {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		@media (max-width: 375px) {
+			gap: 27px;
+		}
+	}
 }
 
 h1 {
-    font-size: 48px;
-    color: $secondary-color;
+	font-size: 48px;
+	color: $secondary-color;
 
-    @media (max-width: 375px) {
-        font-size: 24px;
-    }
+	@media (max-width: 375px) {
+		font-size: 24px;
+	}
 }
 
 h2 {
-    font-size: 36px;
-    color: $primary-color;
+	font-size: 36px;
+	color: $primary-color;
 
-    @media (max-width: 375px) {
-        font-size: 18px;
-    }
+	@media (max-width: 375px) {
+		font-size: 18px;
+	}
 }
 
 h3 {
-    font-size: 24px;
-    color: $primary-color;
+	font-size: 24px;
+	color: $primary-color;
 
-    @media (max-width: 375px) {
-        font-size: 13px;
-    }    
+	@media (max-width: 375px) {
+		font-size: 13px;
+	}
 }
 
 a {
-    color: $third-color;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+	color: $third-color;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 button {
-    border: unset;
-    background-color: unset;
-    :hover {
-    cursor: pointer;
-    }
+	border: unset;
+	background-color: unset;
+	:hover {
+		cursor: pointer;
+	}
 }
