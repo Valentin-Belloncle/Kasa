@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.rating {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	@media (max-width: 375px) {
+		gap: 5px;
+	}
+	
+	i {
+		font-size: 25px;
+		color: $primary-color;
+		&.neutralStar {
+			color: #e3e3e3;
+		}
+		@media (max-width: 375px) {
+			font-size: 13px;
+		}
+	}
+}

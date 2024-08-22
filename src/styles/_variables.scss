@@ -1,10 +1,16 @@
-$primary-color: #FF6060;
+$primary-color: #ff6060;
 $secondary-color: white;
-$third-color: black;
+$tertiary-color: black;
 
-$linear-opacity: linear-gradient(to bottom, rgba(255,255,255,0), rgba(10,10,10,0), rgba(4,4,4,0.2), rgba(0,0,0,0.5));
+$linear-opacity: linear-gradient(
+	to bottom,
+	rgba(255, 255, 255, 0),
+	rgba(10, 10, 10, 0),
+	rgba(4, 4, 4, 0.2),
+	rgba(0, 0, 0, 0.5)
+);
 
 $border-radius: 25px;
 $border-radius-small: 10px;
 
-$font: 'Montserrat', sans-serif;
+$font: "Montserrat", sans-serif;

@@ -10,7 +10,7 @@ function Card() {
           <Link key={id} to={`/property/${id}`}>
             <article className={styles.card} key={id}>
               <img src={cover} alt={description} />
-              <h3>{title}</h3>
+              <p>{title}</p>
             </article>
           </Link>
         )}
