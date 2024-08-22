@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.host {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	&__name {
+		@include flex-center;
+		color: $primary-color;
+		text-align: end;
+        max-width: 95px;
+        @media (max-width: 375px) {
+            font-size: 12px;
+            max-width: 60px;
+			line-height: 17px;
+        }
+	}
+
+	img {
+		height: 64px;
+		width: 64px;
+		border-radius: 100px;
+        @media (max-width: 375px) {
+            height: 32px;
+            width: 32px;
+        }
+	}
+}

@@ -1,21 +1,19 @@
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-  @mixin background-opacity($color, $border-radius) {
-    
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: $color; 
-      border-radius: $border-radius;
-      z-index: 1;
-
-    }
-  }
+@mixin background-opacity($color, $border-radius) {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: $color;
+		border-radius: $border-radius;
+		z-index: 1;
+	}
+}

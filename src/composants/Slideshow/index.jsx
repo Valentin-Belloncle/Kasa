@@ -1,16 +1,8 @@
 import styles from "./index.module.scss";
-import logements from "../../datas/logements.json";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-function Slideshow({ id }) {
+function Slideshow({imagesSource}) {
 	const [currentIndex, setCurrentIndex] = useState(0);
-	console.log("index départ : ", currentIndex);
-
-	useEffect(() => {
-		console.log("index : ", currentIndex);
-	}, [currentIndex]);
-
-	const imagesSource = logements.find((item) => item.id === id).pictures;
 
 	function handlePrev() {
 		setCurrentIndex(
@@ -28,7 +20,7 @@ function Slideshow({ id }) {
 	}
 
 	return (
-		<div className={styles.slideshow}>
+		<section className={styles.slideshow}>
 			<button
 				className={`${styles.slideshow__button} ${styles.prev}`}
 				onClick={handlePrev}
@@ -47,13 +39,16 @@ function Slideshow({ id }) {
 					/>
 				))}
 			</div>
+			<div className={styles.slideshow__counter}>
+				{currentIndex +1}/{imagesSource.length}
+			</div>
 			<button
 				className={`${styles.slideshow__button} ${styles.next}`}
 				onClick={handleNext}
 			>
 				<i className="fa-solid fa-chevron-right"></i>
 			</button>
-		</div>
+		</section>
 	);
 }
 
