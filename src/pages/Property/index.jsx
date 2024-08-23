@@ -11,6 +11,10 @@ function Property() {
 	const { id } = useParams();
 
 	const logement = logements.find((item) => item.id === id);
+	if(logement === undefined){
+		window.location.href = "/404"
+		return false
+	};
 	const pictures = logement.pictures;
 	const title = logement.title;
 	const host = logement.host;

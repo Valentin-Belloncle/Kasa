@@ -8,10 +8,10 @@ function Card() {
       <ul className={styles.gallery}>
         {logements.map(({ id, cover, title, description }) =>
           <Link key={id} to={`/property/${id}`}>
-            <article className={styles.card} key={id}>
+            <li className={styles.gallery__card} key={id}>
               <img src={cover} alt={description} />
               <p>{title}</p>
-            </article>
+            </li>
           </Link>
         )}
       </ul>

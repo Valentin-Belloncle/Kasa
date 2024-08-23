@@ -12,7 +12,7 @@ function Collapse({ title, content, property }) {
 					onClick={() => setIsOpen(!isOpen)}
 					className={styles[isOpen ? "open" : ""]}
 				>
-					<i class="fa-solid fa-chevron-up"></i>
+					<i className="fa-solid fa-chevron-up"></i>
 				</button>
 			</div>
 			<div

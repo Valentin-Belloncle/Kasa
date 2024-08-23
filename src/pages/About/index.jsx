@@ -7,11 +7,11 @@ function About() {
 	return (
 		<main className={styles.about}>
 			<Banner image="landscape2" />
-			<ul className={styles.about__list}>
+			<section className={styles.about__list}>
 				{about.map(({ title, content }) => (
 					<Collapse key={title} title={title} content={content} />
 				))}
-			</ul>
+			</section>
 		</main>
 	);
 }
