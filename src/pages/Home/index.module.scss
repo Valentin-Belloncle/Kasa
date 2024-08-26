@@ -1,13 +1,29 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .home {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 0 100px;
-    @media (max-width: 375px) {
-        gap: 22px;
-        padding: 0 20px;
-    }
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	padding: 0 100px;
+	@media (max-width: 375px) {
+		gap: 22px;
+		padding: 0 20px;
+	}
+
+	&__gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+		gap: 60px;
+		padding: 56px 50px;
+		background-color: #f6f6f6;
+		border-radius: $border-radius-small;
+		@media (max-width: 375px) {
+			gap: 21px;
+			padding: 0;
+			background-color: unset;
+			grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+			border-radius: $border-radius-small;
+		}
+	}
 }
