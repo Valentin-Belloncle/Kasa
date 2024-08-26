@@ -8,10 +8,11 @@
 	@media (max-width: 375px) {
 		gap: 5px;
 	}
-	
+
 	i {
 		font-size: 25px;
 		color: $primary-color;
+		
 		&.neutralStar {
 			color: #e3e3e3;
 		}

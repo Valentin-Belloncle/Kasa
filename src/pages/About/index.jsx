@@ -1,5 +1,5 @@
-import Banner from "../../composants/Banner";
-import Collapse from "../../composants/Collapse";
+import Banner from "../../components/Banner";
+import Collapse from "../../components/Collapse";
 import about from "../../datas/about.json";
 import styles from "./index.module.scss";
 

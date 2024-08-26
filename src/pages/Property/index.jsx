@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import Slideshow from "../../composants/Slideshow";
-import Host from "../../composants/Host";
-import Rating from "../../composants/Rating";
-import Tag from "../../composants/Tag";
-import Collapse from "../../composants/Collapse";
+import Slideshow from "../../components/Slideshow";
+import Host from "../../components/Host";
+import Rating from "../../components/Rating";
+import Tag from "../../components/Tag";
+import Collapse from "../../components/Collapse";
 import logements from "../../datas/logements.json";
 import styles from "./index.module.scss";
 
@@ -11,10 +11,11 @@ function Property() {
 	const { id } = useParams();
 
 	const logement = logements.find((item) => item.id === id);
-	if(logement === undefined){
-		window.location.href = "/404"
-		return false
-	};
+	if (logement === undefined) {
+		window.location.href = "/404";
+		return false;
+	}
+
 	const pictures = logement.pictures;
 	const title = logement.title;
 	const host = logement.host;

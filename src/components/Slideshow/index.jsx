@@ -1,21 +1,17 @@
 import styles from "./index.module.scss";
 import { useState } from "react";
 
-function Slideshow({imagesSource}) {
+function Slideshow({ imagesSource }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
 	function handlePrev() {
 		setCurrentIndex(
-			currentIndex === 0
-				? imagesSource.length - 1
-				: currentIndex - 1
+			currentIndex === 0 ? imagesSource.length - 1 : currentIndex - 1
 		);
 	}
 	function handleNext() {
 		setCurrentIndex(
-			currentIndex === imagesSource.length - 1
-				? 0
-				: currentIndex + 1
+			currentIndex === imagesSource.length - 1 ? 0 : currentIndex + 1
 		);
 	}
 
@@ -40,7 +36,7 @@ function Slideshow({imagesSource}) {
 				))}
 			</div>
 			<div className={styles.slideshow__counter}>
-				{currentIndex +1}/{imagesSource.length}
+				{currentIndex + 1}/{imagesSource.length}
 			</div>
 			<button
 				className={`${styles.slideshow__button} ${styles.next}`}

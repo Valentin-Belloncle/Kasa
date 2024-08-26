@@ -1,5 +1,5 @@
-import Banner from "../../composants/Banner";
-import Card from "../../composants/Card";
+import Banner from "../../components/Banner";
+import Card from "../../components/Card";
 import styles from "./index.module.scss";
 import logements from "../../datas/logements.json";
 
