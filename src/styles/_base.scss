@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		font-size: 12px;
 	}
 
@@ -15,8 +15,8 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 50px;
-		@media (max-width: 375px) {
-			gap: 20px;
+		@media (max-width: 600px) {
+			gap: 15px;
 		}
 	}
 }
@@ -25,7 +25,7 @@ h1 {
 	font-size: 48px;
 	color: $secondary-color;
 
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		font-size: 24px;
 	}
 }
@@ -36,7 +36,7 @@ h2 {
 	font-weight: 500;
 	margin: 0;
 
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		font-size: 18px;
 	}
 }
@@ -45,7 +45,7 @@ h3 {
 	font-size: 24px;
 	color: $primary-color;
 	font-weight: 700;
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		font-size: 13px;
 	}
 }
@@ -53,7 +53,7 @@ h3 {
 a {
 	color: $tertiary-color;
 	text-decoration: none;
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		font-size: 12px;
 	}
 	&:hover {
@@ -68,7 +68,7 @@ p {
 	padding: 0;
 	font-size: 18px;
 	font-weight: normal;
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		font-size: 14px;
 	}
 }

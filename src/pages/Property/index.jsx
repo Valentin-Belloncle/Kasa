@@ -29,20 +29,24 @@ function Property() {
 		<main className={styles.property}>
 			<Slideshow imagesSource={pictures} />
 			<section className={styles.property__content}>
-				<div className={styles.property__content__group1}>
-					<div className={styles.property__content__group1__title}>
-						<h2>{title}</h2>
-						<p>{location}</p>
+				<div className={styles.property__content__top}>
+					<div className={styles.property__content__top__group1}>
+						<div
+							className={styles.property__content__top__group1__title}
+						>
+							<h2>{title}</h2>
+							<p>{location}</p>
+						</div>
+						<ul>
+							{tags.map((tag) => (
+								<Tag key={tag} tag={tag}></Tag>
+							))}
+						</ul>
 					</div>
-					<ul>
-						{tags.map((tag) => (
-							<Tag key={tag} tag={tag}></Tag>
-						))}
-					</ul>
-				</div>
-				<div className={styles.property__content__group2}>
-					<Host className={styles.host} hostData={host} />
-					<Rating className={styles.rating} rating={rating} />
+					<div className={styles.property__content__top__group2}>
+						<Host hostData={host} />
+						<Rating rating={rating} />
+					</div>
 				</div>
 				<div className={styles.property__content__collapses}>
 					<Collapse

@@ -10,14 +10,14 @@
 		background-color: $primary-color;
 		border-radius: 5px;
 		padding: 10px 20px 10px 15px;
-		@media (max-width: 375px) {
+		@media (max-width: 600px) {
 			height: 10px;
 			padding: 10px 6px 10px 10px;
 		}
 
 		&.property {
 			border-radius: $border-radius-small;
-			@media (max-width: 375px) {
+			@media (max-width: 600px) {
 				border-radius: 5px;
 			}
 		}
@@ -27,7 +27,7 @@
 
 			&.property {
 				font-size: 18px;
-				@media (max-width: 375px) {
+				@media (max-width: 600px) {
 					font-size: 13px;
 				}
 			}
@@ -39,10 +39,10 @@
 			font-size: 26px;
 			color: $secondary-color;
 			transition: transform 0.3s ease;
-			@media (max-width: 375px) {
+			@media (max-width: 600px) {
 				font-size: 16px;
 			}
-			
+
 			&.open {
 				transform: rotate(-180deg);
 			}
@@ -59,7 +59,7 @@
 		max-height: 0;
 		padding: 0 20px;
 		list-style-type: none;
-		@media (max-width: 375px) {
+		@media (max-width: 600px) {
 			font-size: 12px;
 			line-height: 17px;
 		}
@@ -67,7 +67,7 @@
 		&.open {
 			max-height: 200px;
 			padding: 20px 20px;
-			@media (max-width: 375px) {
+			@media (max-width: 600px) {
 				padding: 10px 20px;
 			}
 		}

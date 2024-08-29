@@ -6,8 +6,8 @@ function Footer() {
 		<footer>
 			<img src={logo} alt="Logo de Kasa" />
 			<p className={styles.copyright}>
-				<span>© 2020 Kasa.</span>
-				<span> All rights reserved</span>
+				<span>© 2020 Kasa. All</span>
+				<span> rights reserved</span>
 			</p>
 		</footer>
 	);

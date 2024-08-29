@@ -4,7 +4,7 @@
 .card {
 	position: relative;
 	@include background-opacity($linear-opacity, $border-radius-small);
-	@media (max-width: 375px) {
+	@media (max-width: 600px) {
 		@include background-opacity($linear-opacity, $border-radius-small);
 	}
 
@@ -15,7 +15,7 @@
 		height: 340px;
 		object-fit: cover;
 		border-radius: $border-radius-small;
-		@media (max-width: 375px) {
+		@media (max-width: 600px) {
 			height: 250px;
 			border-radius: $border-radius-small;
 		}
